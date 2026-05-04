@@ -85,15 +85,10 @@ a{text-decoration:none;color:inherit}
 }
 
 /* =========================================
-   LOADER
+   LOADER — REMOVED
    ========================================= */
-#loader{
-  position:fixed;inset:0;background:#050508;
-  z-index:100000;display:flex;flex-direction:column;
-  align-items:center;justify-content:center;gap:0;
-  transition:opacity 0.9s ease,visibility 0.9s;
-}
-#loader.out{opacity:0;visibility:hidden;pointer-events:none;}
+#loader{display:none!important;}
+#loader.out{display:none!important;}
 
 .ld-bulb{width:90px;height:130px;position:relative;margin-bottom:8px;}
 .ld-bulb svg{width:100%;height:100%;overflow:visible;}
@@ -197,6 +192,12 @@ a{text-decoration:none;color:inherit}
 .nav-logo-txt{display:flex;flex-direction:column;line-height:1;}
 .nav-logo-txt b{font-family:'Rajdhani',sans-serif;font-size:1.25rem;font-weight:700;color:var(--primary);letter-spacing:0.5px;}
 .nav-logo-txt small{font-size:0.58rem;color:var(--text2);letter-spacing:2.5px;text-transform:uppercase;}
+@media(max-width:480px){
+  .nav-logo-img{height:38px;width:38px;}
+  .nav-logo-txt b{font-size:0.95rem;letter-spacing:0;}
+  .nav-logo-txt small{font-size:0.48rem;letter-spacing:1.2px;}
+  #nav{padding:0 3%;gap:10px;}
+}
 
 .nav-links{
   display:flex;gap:1.8rem;list-style:none;
@@ -1120,6 +1121,7 @@ footer{
     <div class="owner-text" data-aos="fade-left">
       <div class="owner-quote-mark">"</div>
       <h3 class="owner-title" data-en="Built on <span>Trust.</span><br>Powered by Passion." data-mr="<span>विश्वासावर</span> उभारलेले.<br>उत्साहाने चालवलेले.">Built on <span>Trust.</span><br>Powered by Passion.</h3>
+      <p style="font-family:'Rajdhani',sans-serif;font-size:1.35rem;font-weight:700;color:var(--text);letter-spacing:0.5px;margin-bottom:4px;">— Asif Sayyad</p>
       <p class="owner-role" data-en="Founder · The Light House Electrical Shop, Shirdi" data-mr="संस्थापक · द लाइट हाउस इलेक्ट्रिकल शॉप, शिर्डी">Founder · The Light House Electrical Shop, Shirdi</p>
       <p class="owner-desc" data-en="What started as a deep passion for electrical systems has grown into Shirdi's most trusted electrical destination. At The Light House, we believe every home deserves safe, reliable and affordable electrical solutions — not just products off a shelf, but genuine expertise and honest service that lasts years after the job is done." data-mr="विद्युत प्रणालींबद्दलच्या प्रखर आवडीतून सुरू झालेले हे दुकान आज शिर्डीचे सर्वात विश्वासू विद्युत दुकान बनले आहे. द लाइट हाउसमध्ये आम्ही विश्वास ठेवतो की प्रत्येक घराला सुरक्षित, विश्वासार्ह आणि परवडणारी विद्युत सेवा मिळाली पाहिजे.">What started as a deep passion for electrical systems has grown into Shirdi's most trusted electrical destination. At The Light House, we believe every home deserves safe, reliable and affordable electrical solutions — not just products off a shelf, but genuine expertise and honest service that lasts years after the job is done.</p>
       <div class="owner-tags">
@@ -1202,6 +1204,10 @@ footer{
   </div>
   <div class="ft-bottom">
     <div class="ft-copy" data-en="© 2025 <span>The Light House</span>. Wired for Excellence. Shirdi." data-mr="© 2025 <span>द लाइट हाउस</span>. उत्कृष्टतेसाठी तयार. शिर्डी.">© 2025 <span>The Light House</span>. Wired for Excellence. Shirdi.</div>
+    <div style="font-size:0.65rem;color:var(--text2);margin-top:6px;text-align:center;">
+      🛠️ Website designed &amp; developed by <strong style="color:var(--primary)">Sahil Shaikh</strong> &nbsp;·&nbsp; 
+      <a href="tel:7972483330" style="color:var(--primary);text-decoration:none;">📞 79724 83330</a> &nbsp;·&nbsp; For website enquiries
+    </div>
     <div class="soc-links">
       <a href="https://wa.me/919699339710" class="soc-a" target="_blank">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
@@ -1220,10 +1226,7 @@ footer{
 // === AOS ===
 AOS.init({duration:650,once:true,offset:50,easing:'ease-out-cubic'});
 
-// === LOADER ===
-window.addEventListener('load',()=>{
-  setTimeout(()=>document.getElementById('loader').classList.add('out'),2900);
-});
+// === LOADER REMOVED — page shows instantly ===
 
 // === SCROLL PROGRESS ===
 window.addEventListener('scroll',()=>{
